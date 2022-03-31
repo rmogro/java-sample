@@ -11,14 +11,13 @@ public class Ejercicio12 {
 		
 		byte edad;
 		int acumulador = 0;
-		int contador = 0;
-		byte edadMenor = 127, edadMayor = -128;
+		byte edadMenor = 127, edadMayor = -128;	
 		
 		for(int i = 1; i <= n; i++) {
 			System.out.print("Ingrese la siguiente edad: ");
 			edad = teclado.nextByte();
-			contador++; // no es necesario tengo la cantidad de edades en n
-			acumulador += edad;
+			//contador++; // no es necesario tengo la cantidad de edades en n
+			acumulador += edad; // acumulador =  acumulador + edad;
 			
 			if(edad > edadMayor) {
 				edadMayor = edad;
