@@ -18,8 +18,8 @@ public class Ejercicio2 {
 			pesos[i] = teclado.nextFloat();
 			
 			if(i == 0) {
-				menor = pesos[i];
-				mayor = pesos[i];
+				menor = pesos[0];
+				mayor = pesos[0];
 			}
 			else {
 				if(pesos[i] < menor) {
@@ -29,16 +29,16 @@ public class Ejercicio2 {
 				if(pesos[i] > mayor) {					
 					mayor = pesos[i];
 				}
-			}
-			
-			if(pesos[i] > 100) {					
-				existe = true;
-			}
+			}			
 			
 			acumulador += pesos[i];
 		}
 		
-		float medio = acumulador / 4;
+		if(mayor > 100) {					
+			existe = true;
+		}
+		
+		float medio = acumulador / pesos.length;
 		System.out.println("Peso menor: " + menor);
 		System.out.println("Peso mayor: " + mayor);
 		System.out.println("Peso medio: " + medio);
