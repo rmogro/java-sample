@@ -17,11 +17,28 @@ public class Ejercicio1 { // Aplicacion de tipo consola
 		System.out.println("Ingrese su dni: ");
 		int dni = teclado.nextInt();	
 		
+		Persona persona1 = new Persona();
+		persona1.setNombre(nombre);
+		persona1.setApellido(apellido);
+		persona1.setDni(dni);
+		persona1.setDomicilio(domicilio);
+		
+		persona1.mostarDatos();
+		
+		System.out.println("********************************");
+		
+		String nombreUpperCase =  persona1.getNombre().toUpperCase();
+		System.out.println(nombreUpperCase);
+		
+		
+		/*
 		Persona objetoPersona = new Persona(nombre, apellido, dni, domicilio);
 		objetoPersona.mostarDatos();		
 		
-		Persona rene = new Persona("Rene", "Mogro", 29309633, "Salta");
+		String domi = "Salta, Capital";
+		Persona rene = new Persona("Rene", "Mogro", 29309633, domi);
 		rene.mostarDatos();
+		*/
 	}
 
 }
