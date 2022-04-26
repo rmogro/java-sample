@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicio1 {
+public class Ejercicio1 { // aplicacion
 	
 	public static void main(String[] args) {	
 		Scanner teclado = new Scanner(System.in);	
@@ -8,10 +8,10 @@ public class Ejercicio1 {
 		System.out.println("Ingrese el coeficiente a: ");		
 		double a = teclado.nextDouble();
 		
-		System.out.println("Ingrese el coeficiente a: ");
+		System.out.println("Ingrese el coeficiente b: ");
 		double b = teclado.nextDouble();
 		
-		System.out.println("Ingrese el coeficiente a: ");
+		System.out.println("Ingrese el coeficiente c: ");
 		double c = teclado.nextDouble();
 		
 		EcuacionCuadratica ec = new EcuacionCuadratica(a, b, c);

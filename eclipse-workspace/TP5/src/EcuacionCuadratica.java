@@ -15,17 +15,16 @@ public class EcuacionCuadratica {
 	public EcuacionCuadratica(double a, double b, double c) {
 		this.a = a;
 		this.b = b;
-		this.c = c;
+		this.c = c;	
 		
-		this.discriminante = Math.pow(b, 2) - (4 * a * c);
-		 
+		this.discriminante = Math.pow(b, 2) - (4 * a * c); // b2 - 4ac		 
 		
-		if(this.tieneRaiz()) {
+		if(this.tieneRaiz()) { // una unica raiz
 			this.x1 = - b / 2 * a;
 		}
-		else if (this.tieneRaices()) {
-			this.x1 = (double) (- b + Math.sqrt(this.getDiscriminante())) / (2 * a);
-			this.x2 = (double) (- b - Math.sqrt(this.getDiscriminante())) / (2 * a);
+		else if (this.tieneRaices()) {  // dos raices
+			this.x1 = (double) (- b + Math.sqrt(this.discriminante)) / (2 * a);
+			this.x2 = (double) (- b - Math.sqrt(this.discriminante)) / (2 * a);
 		}
 	}
 	
@@ -53,12 +52,24 @@ public class EcuacionCuadratica {
 		return this.c;		
 	}
 	
+	//public void setDiscriminante(double value) {
+	//	this.discriminante = value;
+	//}
+	
 	public double getDiscriminante() {
 		return this.discriminante;		
 	}
 	
 	public boolean tieneRaiz() {
 		return this.discriminante == 0;
+		/*
+		if(this.discriminante == 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		*/
 	}
 	
 	public boolean tieneRaices() {
