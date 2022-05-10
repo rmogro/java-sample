@@ -16,7 +16,7 @@ public class Clase1 {
 		//System.out.println(archivo1.isDirectory());		
 		//System.out.println(directorio.isDirectory());
 		File subdir =  new File(directorio, "subdir");
-		subdir.();
+		subdir.delete();
 	}
 
 }
