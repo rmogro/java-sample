@@ -1,7 +1,7 @@
 
 public class Ejercicio17 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //  aplicacion consola
 		float base = 2;
 		int exp = 5;
 	    float resultado = potencia(base, exp);
@@ -10,9 +10,9 @@ public class Ejercicio17 {
 	}
 	
 	// algoritmo recursivo
-	public static float potencia(float base, int exponente) {
+	public static float potencia(float base, int exponente) { 
 	    if(exponente != 0) {
-	    	return (base * potencia(base, exponente - 1));
+	    	return (base * potencia(base, exponente - 1)); 
 	    }
 	    else {
 	    	return 1;
